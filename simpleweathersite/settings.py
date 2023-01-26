@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-j7h+hz%@tzm6dx6h0@y-s-a)ado_es4u@ur6^zj3-g4u=55xva'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['simpleweathersite-production.up.railway.app']
 
 
 # Application definition
