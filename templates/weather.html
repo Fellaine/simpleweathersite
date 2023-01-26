@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>City: {{ object.city }}, current temperature: {{ object.temperature }}</h1>
+    <h3>Forecast: </h3>
+    <ul>
+        {% for key,value in forecast.items %}
+            <li>Date: {{ key }}, Average temperature: {{ value.0 }}, Maximum temperature: {{ value.1 }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
